@@ -20,6 +20,7 @@ function Textform(props) {
         let text = document.getElementById('databox');
         text.select();
         navigator.clipboard.writeText(text.value);
+        props.showAlert('Copied to Clipboard');
     }
     const handleExtraSpace = () =>{
         let newtext = text.split(/[ ]+/);
