@@ -30,7 +30,7 @@ function Textform(props) {
         s = s.replace(/(^\s*)|(\s*$)/gi,"");//exclude  start and end white-space
         s = s.replace(/[ ]{2,}/gi," ");//2 or more space to 1
         s = s.replace(/\n /,"\n"); // exclude newline with a start spacing
-        return s.split(' ').filter(function(str){return str!="";}).length;
+        return s.split(' ').filter(function(str){return str!=="";}).length;
       }
     const [text, setText] = useState("")
 
@@ -51,6 +51,7 @@ function Textform(props) {
             <div className="container my-3">
                 <h1>Your Summary</h1>
                 <p>{countWords(text)} Words & {text.length} Characters</p>
+                <p>{(text.length ===0)?0: 0.008 * text.split(" ").length} Minutes for reading your content</p>
                 <h2>Preview</h2>
                 <p>{text}</p>
             </div>
