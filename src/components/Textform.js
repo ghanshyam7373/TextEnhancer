@@ -66,7 +66,7 @@ function Textform(props) {
                 <button disabled={text.length === 0} className="btn btn-info mx-2" id="copytext" onClick={handleCopy}>Copy Text</button>
                 <button disabled={text.length === 0} className="btn btn-info mx-2" id="removeExtraSpace" onClick={handleExtraSpace}>Remove Extra Space</button>
                 <button disabled={text.length === 0} className="btn btn-info mx-2" id="removeLineSpace" onClick={handleLineSpace}>Remove NewLine Space</button>
-                <button disabled={text.length === 0} className="btn btn-info mx-2" id="paraphasing" onClick={handleParaPhasing}>Para Phasing</button>
+                <button disabled={text.length === 0} className="btn btn-info mx-2" id="paraphasing" onClick={handleParaPhasing}>Para-pharsing</button>
             </div>
             <hr />
             <div className="container my-3">
